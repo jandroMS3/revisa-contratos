@@ -1,0 +1,47 @@
+{
+  "titulo": "Contrato de prestación de servicios (ejemplo)",
+  "archivo": "ejemplo.pdf",
+  "rol_usuario": "Proveedor",
+  "tipo_contrato": "Servicios / freelance",
+  "jurisdiccion": "España",
+  "fecha_analisis": "2026-01-15",
+  "partes": [
+    {"nombre": "Acme S.L.", "rol": "Cliente", "detalle": "CIF B00000000"},
+    {"nombre": "Persona Ejemplo", "rol": "Proveedor", "detalle": "NIF 00000000X"}
+  ],
+  "resumen": "El proveedor desarrollará una web para el cliente por 6.000 EUR.\n\nEl contrato es favorable al cliente en responsabilidad y propiedad intelectual.",
+  "datos_clave": [{"concepto": "Precio", "valor": "6.000 EUR + IVA", "clausula": "Cláusula 3"}],
+  "puntos_clave": [{"titulo": "Pago a 90 días", "descripcion": "Las facturas se pagan a 90 días.", "clausula": "Cláusula 3.2"}],
+  "fechas_plazos": [{"concepto": "Entrega final", "fecha_o_plazo": "15/03/2027", "clausula": "Cláusula 2"}],
+  "obligaciones": {"usuario": ["Entregar la web en plazo"], "contraparte": ["Pagar a 90 días"]},
+  "riesgos": [{
+    "id": "R1",
+    "titulo": "Responsabilidad ilimitada",
+    "severidad": "critico",
+    "clausula": "Cláusula 9",
+    "cita": "El Proveedor responderá de todos los daños",
+    "descripcion": "No hay tope de responsabilidad.",
+    "impacto": "Podrías responder por pérdidas muy superiores al precio cobrado.",
+    "probabilidad": "Media",
+    "recomendacion": "Negociar un tope."
+  }],
+  "clausulas_ausentes": [{"titulo": "Fuerza mayor", "por_que_importa": "Sin ella respondes aunque el retraso no sea tu culpa."}],
+  "mejoras": [{
+    "titulo": "Limitar la responsabilidad",
+    "prioridad": "alta",
+    "riesgo_relacionado": "R1",
+    "clausula_afectada": "Cláusula 9",
+    "situacion_actual": "Sin límite.",
+    "propuesta": "Tope igual a lo facturado en 12 meses.",
+    "redaccion_sugerida": "La responsabilidad total del Proveedor no excederá del importe abonado en los 12 meses anteriores.",
+    "justificacion": "Acota tu exposición económica.",
+    "dificultad_negociacion": "Media"
+  }],
+  "preguntas_abiertas": ["¿Existe un anexo de especificaciones?"],
+  "advertencias": [],
+  "veredicto": {
+    "nivel": "critico",
+    "recomendacion": "No firmar sin negociar R1.",
+    "texto": "El contrato traslada demasiado riesgo al proveedor."
+  }
+}

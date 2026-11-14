@@ -1,0 +1,66 @@
+# ── Datos sensibles del usuario (contratos y todo lo derivado) ──
+contratos/*
+!contratos/.gitkeep
+*.pdf
+informes/*
+!informes/.gitkeep
+# Salidas de una revisión, estén donde estén
+*-informe.html
+*-informe*.pdf
+*-cambios.md
+texto.txt
+*.sha256
+
+# ── Secretos y credenciales ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa*
+id_ed25519*
+credentials*.json
+secrets*.json
+.npmrc
+.pypirc
+*.kdbx
+
+# ── Python ──
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# ── Node ──
+node_modules/
+
+# ── Sistema operativo y editores ──
+.DS_Store
+._*
+.AppleDouble
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/settings.json
+*.swp
+*~
+
+# ── Logs y temporales ──
+*.log
+*.tmp
+*.bak
+.copilot/
